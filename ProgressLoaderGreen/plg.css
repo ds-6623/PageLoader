@@ -1,0 +1,42 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+.loader-container {
+    height: 100vh;
+    width: 100vw;
+	transition: opacity 1s linear;
+	opacity: 1;
+}
+.loader {
+    position: fixed;
+    background-color: aliceblue;
+    top: 45%;
+	width: 98%;
+	height: 2em;
+    border: 1px solid rgb(97, 97, 97);
+	border-radius: 1.5em;
+	color: white;
+    z-index: 9999;
+}
+.loader::before {
+	content: attr(data-label);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .2em;
+	top: .2em;
+	bottom: .2em;
+	width: calc(var(--width, 0) * 1%);
+	min-width: 1px;
+	max-width: calc(100% - 0.4em);
+	background-color: #069;
+	border-radius: 1em;
+	padding: 0.5em;
+}
+
+
