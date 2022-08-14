@@ -1,0 +1,70 @@
+*, body {
+    padding: 0;
+    margin: 0;
+}
+    .loader-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(60, 60, 60);
+    }
+    
+    .loader-dark {
+        background-color:rgb(21, 21, 21);
+    }
+
+    .loader-loaded {
+        background-color: bisque;
+    }
+        .loader {
+        }
+        .loader_top {
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 33.33%;
+            height: 6rem;
+            width: 8rem;
+        }
+            .loader_top__left {
+                border: 1px solid black;
+            }
+            .loader_top__center {
+                position: relative;
+                box-sizing: border-box;
+                background: url(images/pattern_dot.png) repeat left top;
+                width: 10rem;
+            }
+            /* .loader_top__center::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-top: 80px solid bisque;
+                border-left: 27px solid yellow;
+                width: 0;
+            }
+            .loader_top__center::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                border-top: 80px solid bisque;
+                border-right: 27px solid yellow;
+                width: 0;
+            } */
+            .loader_top_right {
+                border: 1px solid black;
+            }
+        .loader_center {
+            border: 1px solid red;
+            height: 10rem;
+            width: 2rem;
+            background-color: rgb(134, 142, 149);
+        }
+        .loader_bottom {
+            border: 1px solid green;
+            height: 2rem;
+            width: 5rem;
+        }
