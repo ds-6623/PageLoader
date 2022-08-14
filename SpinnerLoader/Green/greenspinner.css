@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 300vh;
+}
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+    .loader {
+        height: 120px;
+        width: 120px;
+        border: 30px solid rgb(172, 172, 172);
+        border-top: 30px solid rgb(9, 112, 9);
+        border-radius: 50%;
+        animation: spin 2s ease-in-out infinite;
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
